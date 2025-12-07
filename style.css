@@ -1,0 +1,291 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fb;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center; /* llmrabe3 msafah */
+  padding: 20px 60px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.left-nav,
+.right-nav {
+  display: flex;
+  gap: 200px;
+}
+
+.left-nav {
+  margin-right: auto;
+}
+
+.logo {
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #4f8ca6;
+}
+
+/* HERO SECTION */
+.hero-banner {
+  background: #fffedd; /* lys gul bakgrunn */
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+  min-height: 320px;
+}
+
+.hero-gift {
+  width: 130px;
+  position: absolute;
+  top: 40px;
+}
+
+.left-gift {
+  left: 40px;
+}
+
+.right-gift {
+  right: 40px;
+}
+
+/* HERO TEXT */
+/* HERO SECTION */
+.hero-banner {
+  background: #fffedd;
+  padding: 50px 20px 70px 20px; /* litt ekstra plass nederst */
+  position: relative;
+  text-align: center;
+  min-height: 230px;
+}
+
+/* GAVE IKONENE */
+.hero-gift {
+  width: 120px;
+  position: absolute;
+}
+
+/* VENSTRE GAVE – OPPE */
+.left-gift {
+  left: 40px;
+  top: 20px; /* plassert øverst */
+}
+
+/* HØYRE GAVE – NEDE */
+.right-gift {
+  right: 40px;
+  bottom: 20px; /* plassert nederst */
+}
+
+/* TEKST */
+.hero-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4f8ca6;
+  margin-bottom: 2px;
+}
+
+.hero-content h3 {
+  font-size: 14px;
+  color: #4f8ca6;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+/* GRADIENT-KNAPP */
+.gradient-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+
+  background: linear-gradient(
+      90deg,
+      #f7a8a8 0%,
+      #d5b1d8 50%,
+      #7eb7d9 100%
+  );
+
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+}
+
+
+/* FEATURES SECTION */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 20px;
+}
+
+.feature {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.feature img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 20px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none; /* skjult først */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* LOGIN BOX */
+.login-box {
+  background: white;
+  padding: 30px;
+  width: 420px;
+  border-radius: 25px;
+  border: 5px solid #78a9ff;
+  text-align: left;
+  position: relative;
+}
+
+.login-icon {
+  width: 120px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* INPUT FELT */
+.login-box label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* LOGIN KNAPP */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+
+  background: linear-gradient(
+     90deg,
+     #f7a8a8,
+     #d5b1d8,
+     #7eb7d9
+  );
+}
+
+/* CLOSE BUTTON */
+.close-popup {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+}
+
+.login-btn:active {
+  transform: scale(0.96);
+  opacity: 0.8;
+}
+
+
+.login-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.login-btn:active::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: rgba(255,255,255,0.3);
+  top: -50%;
+  left: -50%;
+  border-radius: 50%;
+  animation: clickWave 0.4s ease-out forwards;
+}
+
+@keyframes clickWave {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
